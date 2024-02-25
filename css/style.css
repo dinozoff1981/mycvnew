@@ -12,10 +12,10 @@ body {
 
 /*-- index----*/
 
-#header1 {
+.homepage {
     width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
+   
+   
  
     
     background-image: url(/images/dinonewindex.png);
@@ -608,7 +608,7 @@ nav .fas{
         font-size:30px ;
      }
 
-     #header1 {
+     .homepage {
         width: 100%;
         height: 50%;
         
