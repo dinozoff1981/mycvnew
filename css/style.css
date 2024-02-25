@@ -14,9 +14,11 @@ body {
 
 #header1 {
     width: 100%;
-    height: 180vh;
+    height: 100%;
+    flex-wrap: wrap;
+ 
     
-    background-image: url(/images/dino6.jpeg);
+    background-image: url(/images/dinonewindex.png);
     background-size: cover;
     background-position: center;
 }
@@ -608,7 +610,7 @@ nav .fas{
 
      #header1 {
         width: 100%;
-        height: 250vh;
+        height: 50%;
         
         background-image: url(/images/dinindexmobil.png);
         background-size: cover;
