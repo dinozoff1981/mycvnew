@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://kit.fontawesome.com/b8f69cc5e2.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+ 
+
+  <title>About Me</title>
+</head>
+<body>
+
+<div class="container">
+  <div id="header">
+    <nav>
+      <img src="images/logo.png" class="logo">
+
+      <ul id="sidemenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="myservices.html">My Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <i class="fas fa-times" onclick="closemenu()"></i>
+
+    </ul>
+
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+  </div>
+  <div id="about">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/dino6.jpeg" alt="">
+        </div>
+        <div class="about-col-2">
+            <h1 class="description">About Me</h1> 
+            
+            <p id="detail">
+                Throughout my career, I have amassed a wealth of experience spanning across diverse sectors and work environments. <br><br>IAs a professional,  have consistently demonstrated strong leadership skills and a collaborative approach to teamwork. My commitment to excellence is unwavering, and I continually strive to expand my knowledge and skills.
+                
+                With a deep-seated ambition to excel, I am dedicated to delivering results of the highest quality.<br><br> I approach every task with a mindset geared towards maximizing performance and meeting or exceeding expectations. Whether leading a team or working independently, I prioritize effective communication, problem-solving, and adaptability to ensure successful outcomes.
+                
+                I firmly believe in the importance of lifelong learning and staying updated with the latest trends and technologies in my field. This drive for continuous improvement enables me to stay ahead of the curve and deliver innovative solutions to challenges.
+                
+                <br><br> In summary, my professional journey has equipped me with the expertise, mindset, and determination to consistently deliver exceptional results and exceed expectations in any role or project I undertake. </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span class="head">C, C++, Asp .Net</span><br><br>
+                    
+                        <div class="containerskill">
+                            <div class="skills html">90%</div>
+                          </div> <br><br>
+                    
+                    </li>
+                    <li><span class="head">.NetCore Developer</span><br><br>
+                        <div class="containerskill">
+                            <div class="skills html2">95%</div>
+                          </div> <br><br>
+                    </li>
+
+                    <li><span class="head">HTML, CSS, Javascript, PHP, Laravel</span><br><br>
+                    
+                        <div class="containerskill">
+                            <div class="skills html">90%</div>
+                          </div> <br><br>
+                    </li>
+                    <li><span class="head">Network Administration</span><br><br>
+                    
+                        <div class="containerskill">
+                            <div class="skills html1">80%</div>
+                          </div> <br><br>
+                    
+                    </li>
+
+                    <li><span class="head">Hardware Maintenance</span><br><br>
+                    
+                        <div class="containerskill">
+                            <div class="skills html">90%</div>
+                          </div> <br><br>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span class="head">Computer Technician</span><br><br>Dermo Computers, Addis Ababa
+                        Repairing computers, customer support, installing applications.</li><br>
+                    <li><span class="head">Secretary General</span><br><br>Ethiopian Textile Exporters Association, Addis Ababa
+                        Responsible for textile exports and business negotiation representation of 53 textile factories in Ethiopia.</li><br>
+                    <li><span class="head">Team Leader</span><br><br>Svensk Depå Service AB, Stockholm
+                        Responsible for employees, customer management, billing, and quality maintenance.</li><br>
+                    <li><span class="head">Operations Manager</span><br><br>MunCH German Bakery, Addis Ababa
+                        Responsible for employees, customer management, product quality, and other administrative tasks.</li><br>
+                    <li><span class="head"> Working Foreman</span><br><br>Global Fastighets Service AB, Stockholm
+                        Responsible for employees, customer management, and quality maintenance.</li><br>
+                        <li><span class="head"> Junior .Net Developer</span><br><br>Länsförsäkringar AB, Stockholm
+                           micro- Service development for banking applications.</li><br>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span class="head">High School (1995 - 1999)</span><br><br>Nativity Catholic Cathedral School, Addis Ababa,Ethiopian</li><br><br>
+                    <li><span class="head">College (2000 - 2005)</span><br><br>Addis Ababa University / HilCoE Computer Science College, Addis Ababa,Ethiopian</li><br><br>
+                   <li><span class="head">Vocational (2016 - 2017)</span><br><br>COC Level1 Computer Technician Training, Addis Ababa,Ethiopian</li><br><br>
+                    <li><span class="head">Adult Education (2022 -2023)</span><br>HTML/CSS, C# programmering, PHP, Mysql, Javascript, Data Teknik, Stockholm, Sweden</li>
+                   
+                   
+                </ul>
+            </div>
+            
+         
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+
+  <footer>
+    Copy-Right © Tensae Tech, 2024 E.C. 
+ </footer>
+
+ </div>
+ 
+</div>
+
+
+
+<script src="js/menuescript.js"></script>
+
+</body>
+</html>
