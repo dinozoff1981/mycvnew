@@ -14,14 +14,12 @@ body {
 
 .homepage {
     width: 100%;
-    height: 250vh;
+    margin-bottom: 50px;
    
    
  
     
-    background-image: url(/images/dino6.jpeg);
-    background-size: cover;
-    background-position: center;
+ 
 }
 
 #indexfoot{
@@ -36,16 +34,15 @@ body {
 
 }
 
-.container {
-    padding: 10px 10%;
 
-}
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
 }
 
 nav ul li {
@@ -89,18 +86,21 @@ nav .fa-solid{
 
 #header-text{
 
-    margin-top: 20%;
+  
     font-size: 30px;
+    margin-top: 150px;
+    text-align: center;
 }
 
 #header-text p{
 
-    width: 60%;
+    width: 100%;
     border-radius: 15px;
     margin-top: 8%;
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align:center;
     text-shadow: 5px 7px 5px #ababab;
+    
     
     
 }
@@ -116,6 +116,7 @@ font-family: "Honk", system-ui;
   font-variation-settings:
     "MORF" 0,
     "SHLN" 28.4;
+   
 }
 strong{
 
@@ -512,8 +513,8 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight:300 ;
-    margin-top: 20px;
-    margin-top: 200px;
+    margin-bottom: 0;
+    margin-top:auto;
 }
 
 nav .fas{
@@ -523,7 +524,7 @@ nav .fas{
 
 
 /*------ CSS for screens up to 700px ------*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:950px) {
    
     * {
         margin: 0;
@@ -609,14 +610,7 @@ nav .fas{
         font-size:30px ;
      }
 
-     .homepage {
-        width: 100%;
-        height: 50%;
-        
-        background-image: url(/images/dino6.jpeg);
-        background-size: cover;
-        background-position: center;
-    }
+  
 
     .about-col-1, .about-col-2{
 
