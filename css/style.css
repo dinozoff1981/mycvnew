@@ -335,7 +335,8 @@ strong {
 #portfolio {
 
     padding: 50px 0;
-    margin-top: 100px;
+    margin: 50px auto;
+    width: fit-content;
 }
 
 
@@ -396,7 +397,7 @@ strong {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 60px;
     background: #fff;
     width: 60px;
@@ -549,27 +550,95 @@ nav .fas {
 }
 
 
-/*------ CSS for screens up to 700px ------*/
-@media only screen and (max-width:950px) {
+@media (min-width: 600px) and (max-width: 1280px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+
+    .header-container {
+
+        margin-top: -100px;
     }
+
+
+    #header-text p {
+
+
+        margin-top: 8%;
+
+        text-align: center;
+
+        font-size: 25px !important;
+
+
+
+    }
+
+    strong {
+
+        font-size: 28px !important;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    #header-text h1 {
+
+
+
+        font-size: 50px !important;
+
+    }
+
+    #header-text h2 span {
+
+
+        font-size: 29px !important;
+    }
+
+    #header-text h2 {
+
+
+        font-family: "Black Ops One", system-ui;
+        font-size: 29px !important;
+    }
+
+    footer {
+
+        font-size: 16px;
+
+    }
+
+
+
+
+}
+
+
+
+
+/*------ CSS for screens  --*/
+@media screen and (max-width:800px) {
+
+  .header-container{
+
+    margin-top: -100px;
+  }
 
     nav .fas {
         display: block;
         font-size: 25px;
+        margin-right: 25px;
+
+       
     }
+
+    
 
     nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
         right: 0;
-        width: 200px;
-        height: 100vh;
+        width: 150px;
+       
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -583,6 +652,7 @@ nav .fas {
 
     nav ul li a {
         color: #fff;
+        font-size: 12px;
     }
 
     nav ul .fas {
@@ -597,46 +667,133 @@ nav .fas {
 
     #header-text p {
 
-        width: 60%;
-        border-radius: 15px;
+        width: 100%;
+        
         margin-top: 8%;
+     
+        font-size: 12px !important;
+      
+
+
+    }
+
+    strong{
+
+        font-size: 12px !important;
         font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        text-shadow: 5px 7px 5px #ababab;
-        font-size: 20px;
-        color: white;
-
-
     }
 
 
     #header-text h1 {
 
-        font-family: "Honk", system-ui;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-size: 30px;
-        font-style: oblique;
-        font-variation-settings:
-            "MORF" 0,
-            "SHLN" 28.4;
+      
+    font-size: 20px !important;
+    
     }
 
     #header-text h2 span {
 
         color: #ff004f;
         font-family: "Black Ops One", system-ui;
-        font-size: 20px;
+        font-size: 18px !important;
     }
 
     #header-text h2 {
 
 
         font-family: "Black Ops One", system-ui;
-        font-size: 30px;
+        font-size: 18px !important;
     }
 
+    footer {
+     
+     font-size: 12px;
+     height:20px; 
+    }
 
+}
+
+/*------
+@media  screen and (min-width:910px) {
+
+    #header-text p {
+
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 8%;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        text-shadow: 5px 7px 5px #ababab;
+        font-size: 18px !important;
+        color: white;
+
+
+    }
+}
+
+    @media screen and (max-width:810px) {
+
+
+        .header-container{
+
+            margin-top: -100px !important;
+          }
+        
+
+        #header-text p {
+
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 8%;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-shadow: 5px 7px 5px #ababab;
+            font-size: 22px;
+            color: white;
+    
+    
+        }
+    
+        strong{
+    
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    
+    
+        #header-text h1 {
+    
+            font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 50px;
+        font-style: oblique;
+        }
+    
+        #header-text h2 span {
+    
+            color: #ff004f;
+            font-family: "Black Ops One", system-ui;
+            font-size: 30px;
+        }
+    
+        #header-text h2 {
+    
+    
+            font-family: "Black Ops One", system-ui;
+            font-size: 30px;
+        }
+
+
+    }
+    @media screen and (max-width:690px) {}
+
+    @media screen and (max-width:375px) {}
+
+    
+
+
+    /*about*/
 
     .about-col-1,
     .about-col-2 {
