@@ -233,6 +233,7 @@ strong {
 .containerskill {
     margin: 0 auto;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.329);
 }
 
 .skills {
@@ -246,26 +247,26 @@ strong {
 
 .html {
     width: 90%;
-    background: linear-gradient(to right, #0afda4, #e2e9e234);
+    background: rgb(35, 230, 35);
 }
 
 .html1 {
     width: 95%;
-    background: linear-gradient(to right, #0afda4, #e2e9e234);
+    background: rgb(35, 230, 35);
 }
 
 .html2 {
     width: 80%;
-    background: linear-gradient(to right, #0afda4, #e2e9e234);
+    background: rgb(35, 230, 35);
 }
 
 .html3 {
     width: 70%;
-    background: linear-gradient(to right, #0afda4, #e2e9e234);
+    background: rgb(35, 230, 35);
 }
 .html4 {
     width: 90%;
-    background: linear-gradient(to right, #0afda4, #e2e9e234);
+    background: rgb(35, 230, 35);
 }
 
 
