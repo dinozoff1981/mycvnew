@@ -137,20 +137,28 @@ strong {
     padding: 90px 0;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
 }
 
 .about-col-1 {
     flex-basis: 35%;
+    margin-bottom: 20px;
 }
 
 .about-col-1 img {
-    width: 70%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px #ababab;
 }
@@ -166,16 +174,12 @@ strong {
     color: #e66262;
     text-shadow: 3px 3px 3px #ababab;
     padding-bottom: 20px;
-}
-
-#detail,
-.tab-title {
-    color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 .tab-titles {
     display: flex;
+    justify-content: center;
     margin: 20px 0 40px;
 }
 
@@ -186,6 +190,7 @@ strong {
     cursor: pointer;
     position: relative;
     color: white;
+    transition: color 0.3s;
 }
 
 .tab-links::after {
@@ -196,73 +201,79 @@ strong {
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: width 0.5s;
 }
 
 .tab-links.active-link::after {
     width: 50%;
 }
 
-
-.tab-contents ul li {
-
-    list-style: none;
-}
-
-.head {
-
-    color: #e66262;
-    font-size: 14px;
+.tab-links:hover {
+    color: #ff004f;
 }
 
 .tab-contents {
-
     display: none;
 }
 
 .tab-contents.active-tab {
-
     display: block;
+}
 
+.tab-contents ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.head {
+    color: #e66262;
+    font-size: 14px;
 }
 
 .containerskill {
-    width: 50%;
-    background-color: green;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .skills {
-    text-align: right;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: darkblue;
+
 }
 
 
 .html {
     width: 90%;
-    background-color: #04AA6D;
+    background: linear-gradient(to right, #0afda4, #e2e9e234);
 }
 
 .html1 {
-    width: 80%;
-    background-color: #04AA6D;
+    width: 95%;
+    background: linear-gradient(to right, #0afda4, #e2e9e234);
 }
 
 .html2 {
-    width: 95%;
-    background-color: #04AA6D;
+    width: 80%;
+    background: linear-gradient(to right, #0afda4, #e2e9e234);
 }
 
-/*----services----*/
-#services {
+.html3 {
+    width: 70%;
+    background: linear-gradient(to right, #04AA6D, #e2e9e234);
+}
 
+
+/* Services Section */
+
+#services {
     padding: 30px 0;
     margin-top: 100px;
+    text-align: center;
 }
 
 .sub-title {
-
     font-family: "Sofia", sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -271,8 +282,6 @@ strong {
 }
 
 .services-list {
-
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -280,34 +289,25 @@ strong {
 }
 
 .services-list div {
-
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: backgrownd 0.5s, transform 0.5s;
-
+    transition: background 0.5s, transform 0.5s;
 }
 
 .services-list div:hover {
-
     background: #ff004f;
     transform: translateY(-10px);
-
-
 }
 
 .services-list div i {
-
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-
-
 .services-list div h2 {
-
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -318,11 +318,14 @@ strong {
     font-size: 12px;
     color: #fff;
     margin-top: 20px;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 
+
 /*-------portfolio----*/
+
 #portfolio {
 
     padding: 50px 0;
@@ -426,13 +429,14 @@ strong {
 
 
 /*-----contact-------*/
-#contact{
+#contact {
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
 }
+
 .contact-left {
 
     flex-basis: 35%;
