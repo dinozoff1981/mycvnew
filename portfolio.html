@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <script src="https://kit.fontawesome.com/b8f69cc5e2.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>About Me</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/egg.js"></script>
+    <script src="./js/popup.js"></script>
+
 </head>
 
-<body>
-    <div class="container">
-        <div id="header">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="myservices.html">My Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-        </div>
 
-        <div id="portfolio">
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="myservices.html">
+                    <li>Services</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section>
             <h1 class="sub-title">My Works</h1>
-            <div id="work">
-                <div class="work">
-                    <img src="images/travel.jpg" alt="">
-                    <div class="layer">
-                        <h3>Travel Agency Data Management System</h3>
-                        <p>I crafted a PHP and JavaScript application tailored for Shalom Travel, a renowned travel agency situated in Ethiopia. This bespoke application serves as an internal tool for bookkeeping purposes, leveraging a remote SQL database for efficient data storage and management.</p>
-                        <a href="https://github.com/dinozoff1981/shalomfinal.git"><i class="fas fa-external-link-alt"></i></a>
+            <div class="wrapper">
+                <div class="card">
+                    <h3>Travel Agency Data Management System</h3>
+                    <img src="./images/travel.jpg" alt="">
+                    <button class="card-btn open-popup">READ MORE</button>
+                    <div class="popup pop1">
+                        <button class="close-btn">&times;</button>
+                        <h2>Travel Agency Data Management System</h2>
+                        <p>I crafted a PHP and JavaScript application tailored for Shalom Travel, a renowned travel
+                            agency situated in Ethiopia. This bespoke application serves as an internal tool for
+                            bookkeeping purposes, leveraging a remote SQL database for efficient data storage and
+                            management.</p>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/coffeshop.jpg" alt="">
-                    <div class="layer">
-                        <h3>Bakery & Coffee Shop Website</h3>
-                        <p>Kaiser Bakery, an Ethiopian coffee shop, is owned by a Swedish-Ethiopian individual. They approached me with a request to design and launch a static webpage, facilitating seamless communication with their customers.</p>
-                        <a href="https://kaiseret.com/"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="card">
+                    <h3>Bakery & Coffee Shop Website</h3>
+                    <img src="./images/coffeshop.jpg" alt="">
+                    <button class="card-btn open-popup">READ MORE</button>
+                    <div class="popup pop2">
+                        <button class="close-btn">&times;</button>
+                        <h2>Bakery & Coffee Shop Website</h2>
+                        <p>I crafted a PHP and JavaScript application tailored for Shalom Travel, a renowned travel
+                            agency situated in Ethiopia. This bespoke application serves as an internal tool for
+                            bookkeeping purposes, leveraging a remote SQL database for efficient data storage and
+                            management.</p>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/microservice.png" alt="">
-                    <div class="layer">
-                        <h3>.NET Micro-Service For Bank</h3>
-                        <p>Microservices have emerged as the cornerstone of modern applications, providing scalability and flexibility. I've contributed to this trend by developing microservices for a banking application owned by Länsförsäkringar AB in Sweden. Additionally, my portfolio includes numerous backend development projects undertaken as a freelancer on Upwork, a platform connecting clients worldwide with skilled professionals across various sectors.</p>
-                        <a href="https://www.lansforsakringar.se/stockholm/privat/om-oss/digitala-tjanster/"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="card">
+                    <h3>.NET Micro-Service For Bank</h3>
+                    <img src="./images/coffeshop.jpg" alt="">
+                    <button class="card-btn open-popup">READ MORE</button>
+                    <div class="popup pop3">
+                        <button class="close-btn">&times;</button>
+                        <h2>.NET Micro-Service For Bank</h2>
+                        <p>Microservices have emerged as the cornerstone of modern applications, providing scalability
+                            and flexibility. I've contributed to this trend by developing microservices for a banking
+                            application owned by Länsförsäkringar AB in Sweden. Additionally, my portfolio includes
+                            numerous backend development projects undertaken as a freelancer on Upwork, a platform
+                            connecting clients worldwide with skilled professionals across various sectors.</p>
                     </div>
                 </div>
             </div>
-            <a href="https://www.upwork.com/" class="btn">See More</a>
-        </div>
+        </section>
 
-        <footer>
-            Copy-Right © Tensae Tech, 2024 E.C.
-        </footer>
-    </div>
+    </main>
 
-    <script src="js/menuescript.js"></script>
+    <footer>
+        Copy-Right © Tensae Tech, 2024 E.C.
+    </footer>
+
 </body>
 
 </html>

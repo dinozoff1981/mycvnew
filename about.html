@@ -3,164 +3,230 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <script src="https://kit.fontawesome.com/b8f69cc5e2.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-
-
     <title>About Me</title>
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <script src="./js/egg.js"></script>
 </head>
 
 <body>
+    <header>
+        <img src="./images/logo.png" alt="">
 
-    <div class="container">
-        <div id="header">
-            <nav>
-                <img src="images/logo.png" class="logo">
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="myservices.html">
+                    <li>Services</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
 
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="myservices.html">My Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
 
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+<main>
 
-                </ul>
+    <section>
 
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-
-            </nav>
-        </div>
-        <div id="about">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/dino6.jpeg" alt="">
+        <div class="container">
+            <div class="left_Side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img class="photo" src="./images/dino (4).jpeg">
+                    </div>
+                    <br>
+                    <h2>Tensae Girma <br><span>Full-Stack .Net Developer</span> </h2>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="description">About Me</h1>
-
-                    <p id="detail">
-                        Throughout my career, I have amassed a wealth of experience spanning across diverse sectors and
-                        work environments. <br><br>IAs a professional, have consistently demonstrated strong leadership
-                        skills and a collaborative approach to teamwork. My commitment to excellence is unwavering, and
-                        I continually strive to expand my knowledge and skills.
-
-                        With a deep-seated ambition to excel, I am dedicated to delivering results of the highest
-                        quality.<br><br> I approach every task with a mindset geared towards maximizing performance and
-                        meeting or exceeding expectations. Whether leading a team or working independently, I prioritize
-                        effective communication, problem-solving, and adaptability to ensure successful outcomes.
-
-                        I firmly believe in the importance of lifelong learning and staying updated with the latest
-                        trends and technologies in my field. This drive for continuous improvement enables me to stay
-                        ahead of the curve and deliver innovative solutions to challenges.
-
-                        <br><br> In summary, my professional journey has equipped me with the expertise, mindset, and
-                        determination to consistently deliver exceptional results and exceed expectations in any role or
-                        project I undertake.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span class="head">C, C++, Asp .Net</span><br><br>
-
-                                <div class="containerskill">
-                                    <div class="skills html">90%</div>
-                                </div> <br><br>
-
-                            </li>
-                            <li><span class="head">.NetCore Developer</span><br><br>
-                                <div class="containerskill">
-                                    <div class="skills html1">95%</div>
-                                </div> <br><br>
-                            </li>
-
-                            <li><span class="head">HTML, CSS, Javascript, PHP, Laravel</span><br><br>
-
-                                <div class="containerskill">
-                                    <div class="skills html2">80%</div>
-                                </div> <br><br>
-                            </li>
-                            <li><span class="head">Network Administration</span><br><br>
-
-                                <div class="containerskill">
-                                    <div class="skills html3">70%</div>
-                                </div> <br><br>
-
-                            </li>
-
-                            <li><span class="head">Hardware Maintenance</span><br><br>
-
-                                <div class="containerskill">
-                                    <div class="skills html4">90%</div>
-                                </div> <br><br>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span class="head">Computer Technician</span><br><br>Dermo Computers, Addis Ababa
-                                Repairing computers, customer support, installing applications.</li><br>
-                            <li><span class="head">Secretary General</span><br><br>Ethiopian Textile Exporters
-                                Association, Addis Ababa
-                                Responsible for textile exports and business negotiation representation of 53 textile
-                                factories in Ethiopia.</li><br>
-                            <li><span class="head">Team Leader</span><br><br>Svensk Depå Service AB, Stockholm
-                                Responsible for employees, customer management, billing, and quality maintenance.</li>
-                            <br>
-                            <li><span class="head">Operations Manager</span><br><br>MunCH German Bakery, Addis Ababa
-                                Responsible for employees, customer management, product quality, and other
-                                administrative tasks.</li><br>
-                            <li><span class="head"> Working Foreman</span><br><br>Global Fastighets Service AB,
-                                Stockholm
-                                Responsible for employees, customer management, and quality maintenance.</li><br>
-                            <li><span class="head"> Junior .Net Developer</span><br><br>Länsförsäkringar AB, Stockholm
-                                micro- Service development for banking applications.</li><br>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span class="head">High School (1995 - 1999)</span><br><br>Nativity Catholic Cathedral
-                                School, Addis Ababa,Ethiopian</li><br><br>
-                            <li><span class="head">College (2000 - 2005)</span><br><br>Addis Ababa University / HilCoE
-                                Computer Science College, Addis Ababa,Ethiopian</li><br><br>
-                            <li><span class="head">Vocational (2016 - 2017)</span><br><br>COC Level1 Computer Technician
-                                Training, Addis Ababa,Ethiopian</li><br><br>
-                            <li><span class="head">Adult Education (2022 -2023)</span><br><br>HTML/CSS, C# programmering,
-                                PHP, Mysql, Javascript, Data Teknik, Stockholm, Sweden</li>
-
-
-                        </ul>
-                    </div>
-
-
+        
+                <div class="contactInfo">
+                    <h3 class="title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+46764525651</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                            <span class="text">tensaeg@yahoo.com</span>
+                        </li>
+                       
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text">www.linkedin/tensae</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Stockholm, Sweden</span>
+                        </li>
+                    </ul>
                 </div>
+                <div class="contactInfo education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li>
+                            <h5>2010 - 2013</h5>
+                            <h4>Master Degree in Computer Science</h4>
+                            <h4>University Name</h4>
+                        </li>
+                        <li>
+                            <h5>2007 - 2013</h5>
+                            <h4>Bachelor Degree Computer Science</h4>
+                            <h4>University Name</h4>
+                        </li>
+                        <li>
+                            <h5>1997 - 2007</h5>
+                            <h4>Matriculation </h4>
+                            <h4>University Name</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactInfo language">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                            <span class="text">Swedish</span>
+                            <span class="percent">
+                                <div class="swe70" ></div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text">English</span>
+                            <span class="percent">
+                                <div class="eng90"></div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="text">Amharic</span>
+                            <span class="percent">
+                                <div class="am100"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_Side">
+                <div class="about">
+                    <h2 class="title2">Profile</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="about">
+                    <h2 class="title2">Experience</h2>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2020 - Present</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Senior UX Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2018 - 2020</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>UX Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2016 - 2018</h5>
+                            <h5>Company Name</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Junior UX Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about skills">
+                    <h2 class="title2">Professionals skills</h2>
+                    <div class="box">
+                        <h4>HTML</h4>
+                        <div class="percent">
+                            <div class="html80"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>CSS</h4>
+                        <div class="percent">
+                            <div class="css80"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>JavaScript</h4>
+                        <div class="percent">
+                            <div class="js70"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>.Net / C#</h4>
+                        <div class="percent">
+                            <div class="net90"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>SQL</h4>
+                        <div class="percent">
+                            <div class="sql90"></div>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="about interest">
+                    <h2 class="title2">Interests</h2>
+                    <ul>
+                        <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+                        <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
+                        <li><i class="fa fa-microphone" aria-hidden="true"></i> Singing</li>
+                    </ul>
+                </div>
+        
+        
             </div>
         </div>
 
-        <div class="copyright">
 
-            <footer>
-                Copy-Right © Tensae Tech, 2024 E.C.
-            </footer>
-
-        </div>
-
-    </div>
+    </section>
+</main>
 
 
 
-    <script src="js/menuescript.js"></script>
+    <footer>
+        Copy-Right © Tensae Tech, 2024 E.C.
+    </footer>
+
+
+
+
+
+
+
+
 
 </body>
 
